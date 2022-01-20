@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aereis Gonzalez" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--In Document Styling-->
+<!--Example--> <body style="background-color:whitesmoke"> </body>
+    <!--In document styling in CSS-->
+<style>
+    /* In here we must write in CSS */
+    
+    /* Selecting in CSS and Javascript: Select/Cgoose specific element(s) on a page for styling or maniuplation::after
+        
+        *By ELEMENT/TAG type (Examples: Body, Div, p)
+        *By attribute name
+        *By CLASS attribute name To Be Continued...
+    */
+div{/*applies to all div elements on the page */
+    border:1px solid black;
+    padding: 10px;
+    margin: 5px;
+    }
+
+#wrapper { /* applies only to the element with an ID of "wrapper" */
+        background-color: navajowhite;
+
+}
+
+#schools {
+    background-color: lightgoldenrodyellow;
+}
+
+#bio {
+    background-color: lightyellow;
+}
+
+#hobbies {
+    background-color: lightyellow;
+}
+
+#nav, #footer {
+background-color: lightgoldenrodyellow;
+
+}
+
+</style>
+
+
+</head>
+
+<body>
+<!-- This div holds and "wraps?" around all the content on the page-->
+    <div id="wrapper">
+<!--ID names can only be used once per page-->
+<h1>My name here.</h1>
+
+<!--Navigation Bar-->
+         <div id="nav">
+
+<!--Anchor tag links to outside pages [not part of our site]-->
+<a href="https://www.meca.edu" target="_blank"> Click here for free Virus!</a>
+
+<!--Linking to INTERAL pages [.htmls that exist in your current root directory]-->
+<a href="page2.html">Page 2 </a>
+
+<!--In-Page linking [jumping to sections of the current page]-->
+
+
+<!--Fragment Links [jumping to a specific point of anither page]-->
+
+
+         </div><!--/ #nav-->
+
+<!--BIO Section-->
+<div id="bio">
+
+    <h2>About Me</h2>
+    
+    <p> Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+    <!--REMOTE image link example [image file not in root directory, need to use an absolute path (URL + UR at the endI)]
+         Although you should probably avoiding using them-->
+<img src=" https://th.bing.com/th/id/R.75217c1874fffcac7a0fb180e2aae86a?rik=kMKfw1KSSMIliA&riu=http%3a%2f%2fregularshowwiki.weebly.com%2fuploads%2f7%2f4%2f1%2f1%2f7411048%2f7883509_orig.png&ehk=KN3WK2ORY5fgMQpDHBpn9XwHwDJcUDPQe3woRNuVOFM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+ alt="Muscle Man from Regular Show with A Shotgun"
+ stlye="width:500px;"
+title="You know else is the Apex Champion?">
+
+<!--RELATIVE image link below [image fi]e exists in current root directory-->
+<img src="images/stormsEnd.jpg"
+stlye="width:500px">
+<!--You don't have to specify the width in the height its going to scale; but, if you choose not to it gets wacky-->
+
+</div><!--/ #bio-->
+
+<!--Schools Section-->
+         <div id="schools">
+
+         </div><!--/ #school-->
+
+<!--Hobbies Section-->
+         <div id="hobbies">
+
+         </div><!--/ #hobbies-->
+
+<!--Footer-->
+         <div id="footer">
+
+         </div><!--/ #footer-->
+<!--Closing Div-->
+</div>
+
+</body>
+
+</html>
