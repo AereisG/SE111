@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" cotent="Aereis Gonzalez">
+    <meta name="description" content="Week 3 Demo">
+   
+    <title>W3 l Demo</title>
+
+<!--In-Document Styling-->
+<style>
+    /*Now we are writing in CSS*/
+    div {
+ /*selects ALL of the elements of this type (div) on the page*/
+        
+        border:1px solid black;
+        padding:10px;        
+        margin:5px;
+        
+/*End of Div element styling*/
+        }
+    
+
+    #wrapper {
+/*selects ONE element; the one with the id value of 'wrapper'*/
+    
+        background-color: darkgrey;
+        width:900px;
+        margin: auto; /*affects left and right of element when a width is applied*/
+
+/*End of Wrapper ID segement styling*/
+            }
+
+
+    .border {/*selects ALL elements with a cladd of border 'border'*/
+
+            border:2px solid grey;
+
+/*End of border class styling*/
+          }
+
+
+    .bg-main{
+/*Selects everything in the bg-style class*/
+
+        background-color: white;
+    
+/*End of bg-main element styling*/
+    }
+
+
+    #nav{
+/*this shows that individual classifications are more important than class stylings which are more important then element */
+        
+    border:1px sold red;
+
+/*End of Div element styling*/
+    }
+
+
+    .title {
+/*End of title class styling shows how it groups different element types*/
+
+    color:darksalmon
+
+/*End of title styling*/
+    }
+
+
+</style>
+
+
+
+</head>
+<!--End of the head-->
+
+
+<body>
+
+
+    <div id="wrapper">
+    <!--Wrapper contains all the content on the page-->
+
+
+    <div id="header" >
+         <!--First to load on page, tells user where they are/wgar site is about--> 
+            <h1 class="title">Aereis Gonzalez</h1>
+        
+        
+        </div>
+
+
+<!--End of the  Header Segement-->
+
+
+        <div id="nav" class="border">
+         <!--Navigation Bar holds links to other pages within the site-->
+            
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+            <a href="schooling.html" class="button">Schools</a>
+            <a href="hobbies.html" class="button">Hobbies</a>
+
+        </div>
+
+
+<!--End of the  navigation Segement-->
+
+
+        <div id="content" class="border">
+        <!--This area will change content from page to page (usually only one)-->
+                
+            <p class="title"> This is the about page</p>
+
+        </div>
+
+
+<!--End of The Content Section-->
+
+
+        <div id="footer" class="border bg-main">
+        <!--This is the final area of the page-->
+            <a href="#header"> Back to the Top!</a>
+
+
+
+        </div>
+
+
+<!--End of the Footer Secton-->
+ <!--DONT FORGET SCREENSHOT OF VALIDATION-->    
+        
+        
+        
+
+
+    </div>
+
+</body>
+
+
+</html>
