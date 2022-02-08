@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5D1 - Forms and Tables (and all that)</title>
+</head>
+<body>
+    
+    <h2>Basic Table</h2>
+
+
+
+        <table>
+
+
+            <thead> <!--This is Colum Headers-->
+            
+                <tr> <!--tr = table row - must be the outer element!-->
+                  
+                    <td> <!--Table data cell; one td for each colum-->
+                        Your Mom
+                    </td>
+                    <td> Your Dad</td>
+                    <td>Your Dad's Mom</td>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody> <!--All taves nyst gave a tbody this is used for the main content-->
+                
+                <tr>
+
+                    <td>Mrs.Mom</td>
+                    <td>Mr.Dad</td>
+                    <td>Mrs.Dad's Mom</td>
+                </tr>
+
+                <tr>
+
+                    <td>Mr.Mother</td>
+                    <td>Ms.Father</td>
+                    <td>Mrs.Father's Mother</td>
+                </tr>
+
+                <tr>
+
+                    <td>Madam Birthmother</td>
+                    <td>Monsiueer Birth Father</td>
+                    <td>Madamoiselle Mother of Father</td>
+                </tr>
+
+            </tbody>
+
+
+            <tfoot> <!--Not required but, useful for like tallying final sums or results-->
+                
+            </tfoot>
+
+
+
+        </table>
+
+
+    <h2>Basic Form</h2>
+
+        <form method="GET" action="">
+
+            <!--<label> is a text label for the inputs-->
+            <!--for attribute MATCH input's name value like an ID-->
+            <label for="fname">First Name:</label>
+
+            <!--<input> gaining  data from a user-->
+            <!--name attribute builds the query string-->
+
+            <input type="text" id="fname" name="fname">
+
+            <!--Submit button, this connects to the method + action of <form>, query string "needs" it to build-->
+            <input type="submit" vaule="SUBMIT">
+
+            <br>
+
+<!--This part underneath is designed to show how the Forms dont line up-->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <input type="submit" vaule="SUBMIT">
+
+        </form>
+
+
+
+
+
+    <h2>Basic Form with Table</h2>
+
+        <form>
+
+
+
+                <table>
+                            
+
+                    <tbody>
+
+                        <tr>
+                        
+                            <td>
+                                <label for="Treemail">TreEmail:</label>
+                            </td>
+
+
+                            <td>
+                                <input type="text" id="Treemail" name="Treemail" required> <!--The Required attribute makes it so that you must fill this info out before clicking sumbit-->
+                            </td>
+                        
+                        </tr>
+
+
+
+                        <tr>
+                    
+                            <td>
+                                <label for="bemail">bEmail:</label>
+                            </td>
+
+                            
+                            <td>
+                                <input type="text" id="bemail" name="bemail">
+                            </td>
+                    
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td></td>
+
+                            <td>
+                                <input type="date" id="date" name="date">
+                            </td>
+
+
+                        <tr>
+                        
+                            <td>
+                                <label for="comments">Comments:</label>
+                            </td>
+
+
+                            <td>
+                                <textarea id="comments" name="comments" rows=5 cols=20 placeholder="TYPE HERE" maxlength="5"></textarea> 
+                                <!--Placeholder is in the box before you type, and max length is the character limit-->
+                            </td>
+
+
+                        </tr>
+
+
+                        <!--NON TEXT INPUT TYPES-->
+                        <!--These rely on value attributes to build the query string-->
+                        <!--Examples are multiple choice and drop down menus-->
+                        <tr>
+
+                            <td>
+                                <label for="faveColor">Pick Your Favorite Color</label>
+                            </td>
+        
+                        <!--Select creates a drop down like a list-->
+                            <td>
+
+                                <select name="faveColor">
+
+                                    <option value="r">Red</option>
+                                    <option value="b">Blew</option>
+                                    <option value="g">Grean</option>
+
+                                </select>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+                            
+                            <td>
+                                <label for="study">Choose Your Program Study</label>
+                            </td>
+                            <!--Radio Buttos - ciricles - Can only chose ONE out of a set-->
+
+                            <td>
+
+                                <input type="radio" value="se" name="study">Software Engineering
+                                <input type="radio" value="cyb" name="study"> Cyber Secuirty
+                                <input type="radio" value="und" name="study">Undecided
+
+                            </td>
+                        
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <label for="vehicle">Choose Your Vehicle</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="veicle1" value="car">Car <br>
+                                <input type="checkbox" name="veicle2" value="bird">Bird <br>
+                                <input type="checkbox" name="veicle3" value="explosive">Explosive <br>
+                                <input type="checkbox" name="veicle4" value="drill">Drill <br>
+
+                            </td>
+
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <input type="submit" vaule="SUBMIT">
+                            </td>
+                        
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+
+
+        </form>
+
+
+</body>
+</html>
