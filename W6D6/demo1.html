@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 | JS Intro</title>
+    <!--One Day I went to the store and bought some milk, the milk was spoiled the way I like it I know because I put my tongue in the milk before I bought it. It took awhile to get the sourness I was looking for and I even had to go into the back after licking all the other milks but, eventually I got it from a large gray bin outside. It was a peculiar spot, why would people go outside to purchase things? Certain products may be best in regulated environments however, an artificial interior enviornment given with enough care should be able to replicate those things quite easily. I suppose easy of mobility would be one thing, however, dollies are quite avaiable and easy to use and the creation of an entire exterior center seems... excessive. This is obviously in reference to garden centers, and does not really correlating to the story at hand. SO regarding my milk adventure, when I brought it back into to purchase the goods they firstly reacted with disgust, assuming they were making pressumptions based on my attire, I showed them I could pay by displaying stick ends as currency. Then a fellow came foward, parting the sea of confused heads with his air of importance and briskness, and told me to leave. The End. -->
+
+
+</head>
+<body>
+    <!--We should have some HTML in the document-->
+    <h1>W6 JS Intro Demo</h1>
+    
+    <!--IN DOCUMENT JAVASCRIPT-->
+    <script>
+        //In here we can only write in Javascript (single-line coment)
+
+        // DECLARING VARIABLES - use keyword: def; vars must be declared before they can be assigned
+        // like this: console.log(num) [I would let the colors display but, the thing cant continue if the sequence is illogical]
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////
+        
+        //ASSINGMENT - assigning/storing data to a variable (friendly name)
+        num=7 //assignment ony
+        console.log(num)
+        
+        //DECLARE AND ASSIGN AT ONCE
+        var num1 = 10
+        var num2 = 7
+
+        //once variables have data assigned they can be used in output/input/processing/conditionals
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////
+        //MATHEMATICAL PROCESSING
+        var sum = num1 + num2
+
+        //with assignment, everything to the RIGHT  of the equal sign is processed FIRST! Storage occurs from the result of right into left. Also, it reads from TOP to BOTTOM.
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        
+        //OUTPUT--Display of information from the program to a user/human
+
+        //output for testing - developers only
+        console.log('Hello World!')     //mssg only
+        console.log(num1)               // value only
+        
+        //we cqn also mix mssg and stored values by using LITERAL STRING ''
+        //'${VAR}' Will replace with stored values
+        console.log(`The sum of ${num} + ${num2} = ${sum}`)     
+
+        //output for user - displayed to browser page
+        // alert() creates a pop-up; further lines will not be read until user interacts with OK button
+        alert(`Hello World!`)
+        console.log(`alert exited`)
+
+        alert(`The sum of ${num1} + ${num2} = ${sum}`)
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //INPUT - gaining data from a user (or somewhere else :D) into program code
+        //when asking a user for input we need to use it some way, so we store the result to a variable
+        var name= prompt(`Enter Your Name: `)
+        console.log(name)
+
+        //concatenation: adding strins together
+        var last= prompt(`Enter Your Last Name: `)
+        var full = "Madamoiselle" + name + " " + last 
+        console.log(full)
+
+        alert(`Your ful name is: ${full}`)
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
