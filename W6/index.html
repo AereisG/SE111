@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aereis Gonzalez">
+    <title>Week 6: Pay Calculator Assignmen</title>
+</head>
+<!--END OF THE HEAD-->
+
+<body>
+    <h1>Week 6 Pay Calculator</h1>
+<!--Some HTML just have some HTML :)-->
+
+    <script>
+        var gross = prompt(`How much money do you make per week?`)
+        console.log(`Gross Pay: $${gross}`)
+
+
+        var tax = gross * (20/100) 
+        console.log(`Tax Amount: $${tax.toFixed(2)}`)
+
+
+        var net = gross - tax 
+        console.log(`Net Pay: $${net.toFixed(2)}`)
+
+        alert(`Gross Pay: $${gross} \n Tax Amount: $${tax} \n Net Pay: $${net}`)
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>
