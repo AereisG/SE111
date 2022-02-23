@@ -14,9 +14,14 @@
 <!--Some HTML just have some HTML :)-->
 
     <script>
-        var gross = prompt(`How much money do you make per week?`)
-        console.log(`Gross Pay: $${gross}`)
+        var pay = prompt(`How much do you make per week?`)
+        console.log(`Base Pay: $${pay}`)
 
+        var hours = prompt(`How many hours did you work this week?`)
+        console.log(`Hours: ${hours}`)
+
+        var gross = pay * hours
+        console.log(`Gross Pay: $${gross}`)
 
         var tax = gross * (20/100) 
         console.log(`Tax Amount: $${tax.toFixed(2)}`)

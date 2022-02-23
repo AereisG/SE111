@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">W7D1 - JavaScript Notes Overviews </h1>
+    
+    <p id="one"> Your </p>
+
+    <p id="two">Mom </p>
+
+    <p id="three">lmao got em</p>
+
+
+
+    <script>
+
+
+        console.log(document.querySelector(`body`))
+        var body = document.querySelector(`body`)
+        console.log(body)
+
+        //This allows you to select EVERYTHING within the body section or you can just select by ID
+
+        var body = document.querySelector(`#three`)
+        
+        //Heres another example
+        var heading = document.querySelector(`#heading`)
+        console.log(heading)
+        console.log(heading.id)
+        
+        //You can change the id
+        heading.id="title"
+        console.log(heading)
+
+        //You can change properities
+        heading.style.color=`blue`
+
+        //innerhtml Selects everything within the open and close thingies (<> These)
+        console.log(document.querySelector(`#one`).innerHTML)
+        document.querySelector(`#one`).innerHTML = <a href="https://tetr.io/">This is  link </a>
+        console.log(document.querySelector(`#one`).innerHTML)
+
+        // So I'm not gonna have time to right down all the code but, the .value refers to what the person wrote in
+        //Another thing .addEventListener is a thing idk what it does but it is related to functions
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    
+    //Global Scope
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var health = 100
+
+function loseHealth(_amount)
+{health -= _amount}
+
+function getHealth(_amount)
+{health += _amount}
+
+loseHealth(5)
+//health now equals 95
+
+getHealth(5)
+//health now equal 100 again
+
+console.log(health)
+
+/*alternatively: 
+var health = 100
+
+function modifyHealth(_amount)
+{health += _amount}
+
+modifyHealth(-10)
+//health now equals 90
+
+modifyHealth(10)
+//health now equals 100 again
+*/
+
+//The problem with Global Values isMany programmers dislike using Global variables, because they can be overridden by accident if you work in a team or have lots of lines of code. If I make a health variable, and you make a health variable in a program, yours might overwrite mine : ( Also, global variables stick around unless you delete them by setting them equal to NULL. Global variables can cause memory leaks, because they don't go away unless you tell them to. However, in this class, that won't really matter though. We are not making very complex and processor intensive programs. 
+
+
+
+
+
+//Local Scope
+///////////////////////////////////////////////////////////////////////////////////////////////
+function modifyHealth(_amount)
+{
+    var health = 100
+    health += _amount
+    return health
+}
+
+var newHealth= modifyHealth(-5)
+console.log(newHealth)
+//without return Health the value would get deleted since var health only exists within the function, once the function closes your done-ski-bop and the variable disappears so it is undefined. 
+
+
+
+
+
+//Block Scope
+//////////////////////////////////////////////////////////////////////////
+function add(_a, _b)
+{
+  var sum = _a + _b
+  if(sum < 50)
+  {
+    var size = "small"
+    alert(size)
+  }
+  else
+  {
+    var size = "big"
+    alert(size)
+  }
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
