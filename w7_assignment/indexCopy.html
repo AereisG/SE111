@@ -74,10 +74,10 @@
         //edit the below statement to select the #enter-button id from the HTML file
         document.querySelector(`#enterButton`).addEventListener(`click`, alertName)
         
-            var fname = document.querySelector(`#first`)
-            var lname = document.querySelector(`#last`).value
-            var hour = document.querySelector(`#hour`).value
-            var rate = document.querySelector(`#rate`).value
+            var fname = document.querySelector(`#first`)   
+            var lname = document.querySelector(`#last`)
+            var hour = document.querySelector(`#hour`) 
+            var rate = document.querySelector(`#rate`)
             
             var full 
             var gross
@@ -88,7 +88,7 @@
             hour = Number(hour)
 
             var info = document.querySelector(`#info`)
-            var finalMessage = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate.toFixed(2)} `
+            var finalMessage = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate/*.toFixed(2)*/} `
             var check = document.querySelector(`#check`)
 
         function alertName(e)
@@ -103,16 +103,19 @@
             
              
             var fname_ = fname.value
-            //return fname
+            
 
-            let lname = document.querySelector(`#last`).value
-            //return lname
+            var lname_ = lname.value
+            
+            var hour_ = hour.value
+            
+            var rate_ =rate.value
+            
+            let fname = fname_ 
+            let lname = lname_ 
+            let hour = hour_ 
+            let rate = rate_ 
 
-            let hour = document.querySelector(`#hour`).value
-            //return hour
-
-            let rate = document.querySelector(`#rate`).value
-            //return rate
 
             //console.log() all four values
             
@@ -122,8 +125,9 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            let full = fname + " " + lname 
-            return full
+            var full_ = fname + " " + lname 
+            //let full
+            //return full
 
             //console.log() the full name value
             console.log(full)
@@ -139,39 +143,53 @@
             //use a tax percentage of 20% (.2)
             //console.log() all three processed values, rounded to the second decimal place
             
-        let gross = rate * hour
+        var gross_ = rate * hour
         console.log(`Gross Pay: $${gross}`)
-        return gross
+        
+        //let gross
+        //return gross
 
-        let taxAmount = gross * (20/100) 
-        console.log(`Tax Amount: $${taxAmount.toFixed(2)}`)
-        return taxAmount
 
-        let net = gross - taxAmount 
-        console.log(`Net Pay: $${net.toFixed(2)}`)
-        return net
+        var taxAmount_ = gross * (20/100) 
+        console.log(`Tax Amount: $${taxAmount/*.toFixed(2)*/}`)
+        //let taxAmount
+        //return taxAmount
 
-    
+
+        var net_ = gross - taxAmount 
+        console.log(`Net Pay: $${net/*.toFixed(2)*/}`)
+        //let net
+        //return net
     
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            let finalMessage = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate.toFixed(2)} `
-            return finalMessage
-        
+            var finalMessage_ = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate/*.toFixed(2)*/} `
+            console.log(finalMessage)
+        //let finalMessage
+        //return finalMessage
+
+
+
             //create a new var called 'info' and store the entire #info *HTML element* to it ~
-            let info = document.querySelector(`#info`) 
-            return info
+            var info_ = document.querySelector(`#info`) 
+        //let info
+        //return info
+
+
 
             //create a new var called 'num' and store the entire #check *HTML element* to it
-            let check = document.querySelector(`#check`)
-            return check
+            var check_ = document.querySelector(`#check`)
+        //let check
+        //return check
+
+
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
             info.innerHTML = finalMessage
 
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-            check.innerHTML = `Gross Pay: ${gross.toFixed(2)} <br> Tax Amount: ${taxAmount.toFixed(2)} <br> Net Pay: ${net.toFixed(2)}` 
+            check.innerHTML = `Gross Pay: ${gross/*.toFixed(2)*/} <br> Tax Amount: ${taxAmount/*.toFixed(2)*/} <br> Net Pay: ${net/*.toFixed(2)*/}` 
 
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
