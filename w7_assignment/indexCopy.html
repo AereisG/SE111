@@ -83,12 +83,10 @@
             var gross
             var taxAmount
             var net
-            
-            rate = Number(rate)
-            hour = Number(hour)
 
+            
             var info = document.querySelector(`#info`)
-            var finalMessage = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate/*.toFixed(2)*/} `
+            var finalMessage = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate/*.toFixed(2)*/}` 
             var check = document.querySelector(`#check`)
 
         function alertName(e)
@@ -102,20 +100,14 @@
             rate --> hourly rate, #rate */
             
              
-            var fname_ = fname.value
+            fname = fname.value
             
-
-            var lname_ = lname.value
+            lname = lname.value
             
-            var hour_ = hour.value
+            hour = hour.value
             
-            var rate_ =rate.value
+            rate =rate.value
             
-            let fname = fname_ 
-            let lname = lname_ 
-            let hour = hour_ 
-            let rate = rate_ 
-
 
             //console.log() all four values
             
@@ -125,9 +117,8 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full_ = fname + " " + lname 
-            //let full
-            //return full
+            full = fname + " " + lname 
+
 
             //console.log() the full name value
             console.log(full)
@@ -135,7 +126,8 @@
 
             //convert both hours and rate to Number() data types ~
             
-
+            rate = Number(rate)
+            hour = Number(hour)
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
 
@@ -143,53 +135,53 @@
             //use a tax percentage of 20% (.2)
             //console.log() all three processed values, rounded to the second decimal place
             
-        var gross_ = rate * hour
+        gross = rate * hour
         console.log(`Gross Pay: $${gross}`)
         
         //let gross
         //return gross
 
 
-        var taxAmount_ = gross * (20/100) 
+        taxAmount = gross * (20/100) 
         console.log(`Tax Amount: $${taxAmount/*.toFixed(2)*/}`)
         //let taxAmount
         //return taxAmount
 
 
-        var net_ = gross - taxAmount 
+        net = gross - taxAmount 
         console.log(`Net Pay: $${net/*.toFixed(2)*/}`)
         //let net
         //return net
     
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage_ = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate/*.toFixed(2)*/} `
-            console.log(finalMessage)
+        finalMessage_ = `Full Name: ${full} <br> Hours worked: ${hour} <br> Hourly Rate ${rate/*.toFixed(2)*/} `
+        console.log(finalMessage)
         //let finalMessage
         //return finalMessage
 
 
 
             //create a new var called 'info' and store the entire #info *HTML element* to it ~
-            var info_ = document.querySelector(`#info`) 
+        info = document.querySelector(`#info`) 
         //let info
         //return info
 
 
 
-            //create a new var called 'num' and store the entire #check *HTML element* to it
-            var check_ = document.querySelector(`#check`)
+        //create a new var called 'num' and store the entire #check *HTML element* to it
+        check = document.querySelector(`#check`)
         //let check
         //return check
 
 
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
-            info.innerHTML = finalMessage
+        info.innerHTML = finalMessage
 
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-            check.innerHTML = `Gross Pay: ${gross/*.toFixed(2)*/} <br> Tax Amount: ${taxAmount/*.toFixed(2)*/} <br> Net Pay: ${net/*.toFixed(2)*/}` 
+        check.innerHTML = `Gross Pay: ${gross/*.toFixed(2)*/} <br> Tax Amount: ${taxAmount/*.toFixed(2)*/} <br> Net Pay: ${net/*.toFixed(2)*/}` 
 
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
